@@ -4,7 +4,7 @@ var btnSignup = document.querySelector(".signup button").addEventListener('click
     let username = document.querySelector('#email').value;
     let password = document.querySelector('#password').value;
 
-    fetch(base_url + '/users/signup', {
+    fetch(base_url + "users/signup", {
         method: "post",
         headers: {
             'Content-Type': 'application/json'
