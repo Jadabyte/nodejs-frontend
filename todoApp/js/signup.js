@@ -24,4 +24,5 @@ var btnSignup = document.querySelector(".signup button").addEventListener('click
             window.location.href = "index.html";
         }
     })
+    console.log(password);
 });
