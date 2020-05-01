@@ -1,0 +1,8 @@
+{
+    "Database": {
+        "conn": "mongodb+srv://Jadabyte:krJu7VusYJoF8fgF@cluster0-yxpok.mongodb.net/test?retryWrites=true&w=majority"
+    },
+    "jwt": {
+        "secret": "MyVerySecretWord"
+    }
+}

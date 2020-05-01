@@ -6,14 +6,17 @@ const signup = async (req, res, next) => {
     let username = req.body.username; // UI or postman
     let password = req.body.password;
 
-    const user = new User({username: username});
+    const user = new User({
+        username: username
+    });
     await user.setPassword(password);
     await user.save().then(result =>{
+        console.log(result);
+
         let token = jwt.sign({
             uid: result._id,
             username: result.username
         }, config.get('jwt.secret'));
-
         res.json({
             "status": "success",
             "data": {
